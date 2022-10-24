@@ -10,7 +10,7 @@ void print_number(int n)
 {
 	unsigned int num, num2;
 	int i;
-	int hei = 1;
+	int i = 1;
 
 	if (n < 0)
 	{
@@ -19,7 +19,6 @@ void print_number(int n)
 	}
 	num = n;
 	num2 = num;
-
 	if (num > 9)
 	{
 		while (num >= 10)
