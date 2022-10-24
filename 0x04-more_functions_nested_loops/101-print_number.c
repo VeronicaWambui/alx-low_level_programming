@@ -18,7 +18,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 	num = n;
-	mum2 = num;
+	num2 = num;
 	if (num > 9)
 	{
 		while (num >= 10)
