@@ -10,7 +10,7 @@ void print_number(int n)
 {
 	unsigned int num, num2;
 	int i;
-	int i = 1;
+	int aux = 1;
 
 	if (n < 0)
 	{
@@ -18,18 +18,18 @@ void print_number(int n)
 		_putchar('-');
 	}
 	num = n;
-	num2 = num;
+	mum2 = num;
 	if (num > 9)
 	{
 		while (num >= 10)
 		{
-			hei = hei * 10;
+			aux = aux * 10;
 			num = num / 10;
 		}
-		_putchar((num2 / hei) + '0');
-		hei = hei / 10;
+		_putchar((num2 / aux) + '0');
+		aux = aux / 10;
 
-		for (i = hei; i >= 1; i = i / 10)
+		for (i = aux; i >= 1; i = i / 10)
 			_putchar((num2 / i) % 10 + '0');
 	}
 	else
