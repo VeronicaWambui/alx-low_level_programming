@@ -7,16 +7,21 @@
 
 int main(void)
 {
-	int i = 0;
+	int n = 48;
+	int l = 'a';
 
-	while (i < 48)
+	while (n <= 57)
 	{
-		if (i < 10)
-			putchar(i + '0');
-		else if (i > 41)
-			i++;
+		putchar(n);
+		n += 1;
 	}
-	putchar(10);
+
+	while (l <= 'f')
+	{
+		putchar(l);
+		l++;
+	}
+	putchar('\n');
 
 	return (0);
 }
