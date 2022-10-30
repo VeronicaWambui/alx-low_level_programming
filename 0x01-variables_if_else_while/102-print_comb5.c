@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints all possible combinations of two two-digit numbers 0 to 99
+ * main - a program that prints all possible
+ * combinations of two two-digit numbers 0 to 99
  * separated by , followed by a space
  * printed in ascending order
  * Return: 0
@@ -24,6 +25,7 @@ int main(void)
 			putchar((i % 10) + n1);
 			putchar(32);
 			putchar((j / 10) + n1);
+			putchar((j % 10) + n1);
 
 			if (i != 98 || j != 99)
 			{
