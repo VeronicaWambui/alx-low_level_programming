@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/**
+ * main - prints all the numbers of base 16 in lowercase
+ * Return: 0
+ */
+
+int main(void)
+{
+	int i = 0;
+
+	while (i < 48)
+	{
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			i++;
+	}
+	putchar(10);
+
+	return (0);
+}
